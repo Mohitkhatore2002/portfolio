@@ -476,3 +476,38 @@ html {
     width: 100%;
     overflow-x: hidden;
 }
+/* 🔥 FINAL HERO MOBILE FIX (ULTIMATE) */
+
+.hero{
+    overflow:hidden;
+    }
+    
+    .hero .container{
+    max-width:100%;
+    padding:0 16px;
+    }
+    
+    @media(max-width:768px){
+    
+    .container{
+    width:100%;
+    padding:0 16px;
+    }
+    
+    .hero{
+    min-height:auto;
+    padding-top:90px;
+    padding-bottom:40px;
+    }
+    
+    .hero h1{
+    font-size:30px;
+    line-height:1.2;
+    word-break:break-word;
+    }
+    
+    .hero p{
+    font-size:15px;
+    }
+    
+    }
