@@ -1,27 +1,27 @@
+/* 
+ * Mohit Khatore Portfolio - Premium Engineering Design
+ * Comprehensive Responsive System v2.0
+ */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Design System Tokens */
+    /* Design Tokens */
     --bg-primary: #000000;
     --bg-secondary: #080808;
     --text-primary: #FFFFFF;
     --text-secondary: #8A8A8E;
     --text-dim: #424245;
-    --accent: #FFFFFF;
     --border: rgba(255, 255, 255, 0.08);
-
     --font-main: 'Inter', sans-serif;
 
-    /* Responsive Spacing System */
-    --space-xs: 0.5rem;
-    --space-s: 1rem;
-    --space-m: 1.5rem;
-    --space-l: clamp(2rem, 5vw, 4rem);
-    --space-xl: clamp(4rem, 10vw, 7rem);
-
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    /* Variables for Consistency */
+    --nav-height: 80px;
+    --section-padding: 60px;
+    --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* 3️⃣ GLOBAL RESPONSIVE SYSTEM */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -43,7 +43,29 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Typography - Fluid System */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 4️⃣ SECTION SPACING FIX */
+section {
+    padding: var(--section-padding) 0;
+}
+
+.section--alt {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+/* 7️⃣ TYPOGRAPHY SYSTEM (DESKTOP) */
 h1,
 h2,
 h3,
@@ -55,53 +77,38 @@ h5 {
 }
 
 h1 {
-    font-size: clamp(2rem, 8vw, 4.5rem);
-    margin-bottom: 1.5rem;
+    font-size: 56px;
+    margin-bottom: 24px;
 }
 
 h2 {
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    margin-bottom: var(--space-m);
+    font-size: 32px;
+    margin-bottom: 24px;
     color: var(--text-primary);
 }
 
 h3 {
-    font-size: clamp(1.25rem, 3vw, 1.8rem);
+    font-size: 24px;
 }
 
 p {
     color: var(--text-secondary);
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: 18px;
     max-width: 65ch;
 }
 
-/* Base Layout Classes */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 var(--space-m);
-}
-
-.section {
-    padding: var(--space-xl) 0;
-}
-
-.section--alt {
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-/* Navigation */
+/* 6️⃣ NAVBAR FIX (DESKTOP) */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
+    height: var(--nav-height);
     z-index: 1000;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
-    padding: 0.85rem 0;
+    display: flex;
+    align-items: center;
 }
 
 .navbar .container {
@@ -110,16 +117,21 @@ p {
     align-items: center;
 }
 
+.logo img {
+    width: 32px;
+    border-radius: 4px;
+}
+
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 32px;
     list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-secondary);
-    font-size: 0.85rem;
+    font-size: 14px;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -128,53 +140,45 @@ p {
     color: var(--text-primary);
 }
 
-/* Hero Section */
+/* 2️⃣ HERO SECTION (DESKTOP) */
 .hero {
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.hero .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: var(--nav-height);
 }
 
 .hero-tagline {
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 600;
     color: var(--text-secondary);
     background: var(--border);
-    padding: 4px 12px;
+    padding: 6px 16px;
     border-radius: 100px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     display: inline-block;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .hero-cta-group {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 32px;
 }
 
 .hero-social-links {
     display: flex;
-    gap: 1.25rem;
-    margin-left: 0.5rem;
+    gap: 20px;
+    margin-left: 8px;
 }
 
 .hero-social-links a {
     color: var(--text-secondary);
-    font-size: 1.25rem;
+    font-size: 20px;
     transition: var(--transition);
 }
 
@@ -183,62 +187,70 @@ p {
     transform: translateY(-2px);
 }
 
-/* Grids & Cards */
+/* 5️⃣ GRID FIX (DESKTOP/TABLET/MOBILE) */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .card {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
-    padding: 1.5rem;
+    padding: 32px;
     border-radius: 12px;
     transition: var(--transition);
-    display: flex;
-    flex-direction: column;
 }
 
 .card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-4px);
-    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .card-title {
-    font-size: 0.75rem;
+    font-size: 11px;
     color: var(--text-dim);
     text-transform: uppercase;
-    margin-bottom: 1.25rem;
+    margin-bottom: 16px;
     letter-spacing: 0.1em;
     font-weight: 700;
 }
 
-/* Buttons System */
+/* Skill Tags */
+.skill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+/* 1️⃣ BUTTON SYSTEM */
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
+    padding: 14px 28px;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 15px;
     text-decoration: none;
     transition: var(--transition);
     cursor: pointer;
-    min-width: 44px;
-    min-height: 44px;
-    gap: 8px;
+    gap: 10px;
 }
 
 .btn-primary {
     background: var(--text-primary);
     color: var(--bg-primary);
-}
-
-.btn-primary:hover {
-    background: #e0e0e0;
 }
 
 .btn-outline {
@@ -248,32 +260,7 @@ p {
 }
 
 .btn-outline:hover {
-    background: var(--border);
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Skills System */
-.skill-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.skill-tag {
-    display: inline-block;
-    padding: 4px 10px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    transition: var(--transition);
-}
-
-.skill-tag:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    color: var(--text-primary);
+    border-color: rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.05);
 }
 
@@ -281,97 +268,76 @@ p {
 .engineering-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: clamp(2rem, 5vw, 4rem);
+    gap: 40px;
 }
 
 .methodology-list {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 24px;
 }
 
-.methodology-item h4 {
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-/* Case Study System */
+/* Project Case Study */
 .project-case-study {
-    margin-bottom: clamp(3rem, 8vw, 5rem);
+    margin-bottom: 60px;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 3rem;
+    padding-bottom: 40px;
 }
 
 .case-study-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 2.5rem;
-    gap: 1.5rem;
+    margin-bottom: 32px;
+    gap: 20px;
 }
 
 .case-study-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 2rem;
+    gap: 24px;
 }
 
 .case-study-item h5 {
-    font-size: 0.7rem;
+    font-size: 11px;
     text-transform: uppercase;
     color: var(--text-dim);
-    letter-spacing: 0.08em;
-    margin-bottom: 0.75rem;
-    font-weight: 700;
+    margin-bottom: 8px;
 }
 
-.case-study-item p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-/* Contact Form */
+/* 8️⃣ CONTACT SECTION FIX */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 4rem;
-}
-
-.contact-info-meta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 3rem;
-    flex-wrap: wrap;
+    gap: 64px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 20px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 8px;
 }
 
 .form-group label {
-    font-size: 0.7rem;
+    font-size: 11px;
     text-transform: uppercase;
     color: var(--text-dim);
-    letter-spacing: 0.08em;
     font-weight: 700;
 }
 
 .form-control {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
-    padding: 0.85rem 1rem;
+    padding: 14px;
     border-radius: 8px;
     color: var(--text-primary);
-    font-family: var(--font-main);
-    font-size: 1rem;
+    width: 100%;
+    font-family: inherit;
     transition: var(--transition);
 }
 
@@ -380,82 +346,133 @@ p {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-textarea.form-control {
-    min-height: 120px;
-    resize: vertical;
+/* FOOTER */
+footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 32px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 13px;
 }
 
 /* Utility Helpers */
+.u-mt-1 {
+    margin-top: 16px;
+}
+
+.u-mt-2 {
+    margin-top: 32px;
+}
+
 .text-dim {
     color: var(--text-dim);
 }
 
-.u-mt-1 {
-    margin-top: 1rem;
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+@media (max-width: 1024px) {
+    /* Tablet behavior - Handled by auto-fit grid mostly */
 }
 
-.u-mt-2 {
-    margin-top: 2rem;
-}
-
-.u-mb-1 {
-    margin-bottom: 1rem;
-}
-
-/* Responsive Overrides */
 @media (max-width: 768px) {
+    :root {
+        --nav-height: 64px;
+        --section-padding: 40px;
+    }
+
+    /* 7️⃣ TYPOGRAPHY (MOBILE) */
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* 6️⃣ NAVBAR MOBILE FIX */
+    .navbar {
+        height: 64px;
+    }
+
     .nav-links {
         display: none;
     }
 
+    /* Focus on Contact CTA for mobile */
+
+    /* 2️⃣ HERO MOBILE FIX */
     .hero {
+        padding-top: 80px;
         text-align: center;
-        align-items: center;
-        padding-top: 6rem;
-    }
-
-    .case-study-header {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .contact-info-meta {
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 var(--space-s);
     }
 
     .hero-cta-group {
         flex-direction: column;
         width: 100%;
-        gap: 0.75rem;
+        gap: 12px;
     }
 
     .btn {
         width: 100%;
+        /* 8️⃣ Full width mobile */
     }
 
     .hero-social-links {
-        margin-left: 0;
-        margin-top: 1.5rem;
+        margin: 16px 0 0 0;
         justify-content: center;
-        width: 100%;
+    }
+
+    /* CASE STUDY MOBILE FIX */
+    .case-study-header {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: left;
+    }
+
+    .contact-grid {
+        gap: 40px;
     }
 }
 
-/* Logo Utility */
-.logo {
-    display: flex;
-    align-items: center;
+/* 1️⃣ SPECIFIC FIXES FOR TINY DEVICES (320px) */
+@media (max-width: 374px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .container {
+        width: 92%;
+    }
 }
 
-.logo img {
-    width: 32px;
-    height: auto;
-    border-radius: 4px;
+/* Ensure no horizontal scroll */
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
 }
