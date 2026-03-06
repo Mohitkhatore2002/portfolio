@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Khatore | Full Stack Java Developer</title>
+    <!-- SEO Tags -->
+    <meta name="description"
+        content="Portfolio of Mohit Khatore, a Full Stack Java Developer building structured, scalable systems with Java and Spring MVC.">
+    <meta property="og:title" content="Mohit Khatore | Full Stack Java Developer">
+    <meta property="og:description"
+        content="I design systems, not pages. Explore my portfolio of structured, scalable Java applications.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/mk.jpg" alt="MK Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#engineering">Engineering</a></li>
+                <li><a href="#projects">Work</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-outline navbar-contact-btn">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- STEP 1 — HERO SECTION (LINEAR STYLE) -->
+        <section id="hero" class="hero section">
+            <div class="container">
+                <span class="hero-tagline">Full Stack Java Developer</span>
+                <h1>Full Stack Java Developer building scalable backend systems.</h1>
+                <p>Specialized in Spring ecosystem, REST APIs, and production-ready architectures.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; align-items: center;">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                    <div style="display: flex; gap: 1.5rem; margin-left: 1rem;">
+                        <a href="https://github.com/mohitkhatore"
+                            style="color: var(--text-secondary); font-size: 1.25rem;"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/mohitkhatore"
+                            style="color: var(--text-secondary); font-size: 1.25rem;"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Proof of Work Screenshot Placeholder -->
+                <div class="hero-image-proof">
+                    <img src="https://via.placeholder.com/1200x800/080808/8A8A8E?text=Inventory+Management+System+Architecture+Proof"
+                        alt="Inventory Management System Screenshot" style="width: 100%; display: block;"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 2 — ABOUT SECTION (ENGINEERING FOCUSED) -->
+        <section id="about" class="section">
+            <div class="container">
+                <div style="max-width: 800px;">
+                    <h2
+                        style="font-size: 1.5rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">
+                        Engineering Mindset</h2>
+                    <p style="margin-top: 2rem; font-size: 1.25rem; color: var(--text-primary); line-height: 1.4;">
+                        I am a Java-focused full stack developer building structured, scalable, and production-ready
+                        systems.
+                    </p>
+                    <p style="margin-top: 1.5rem; color: var(--text-secondary);">
+                        My work is centered around clean architecture, performance optimization, and reliable backend
+                        design using the Spring ecosystem.
+                    </p>
+                    <p style="margin-top: 1.5rem; color: var(--text-secondary);">
+                        I take a **problem-first approach**: focusing on business workflows, system constraints, and
+                        data flow before writing a single line of code. This ensures the output is maintainable and
+                        performs under real-world conditions.
+                    </p>
+                    <p style="margin-top: 1.5rem; color: var(--text-secondary);">
+                        Recently, I built multiple backend-driven systems including an Inventory Management System,
+                        role-based enterprise modules, and scalable REST APIs using Spring MVC, Spring Boot,
+                        JSP/Servlets, and MySQL. I also explored AI backend design using Spring AI with RAG pipelines
+                        and vector databases.
+                    </p>
+                    <p style="margin-top: 1.5rem; color: var(--text-secondary);">
+                        I aim to build systems that are not just functional, but stable, efficient, and built for
+                        long-term growth. **Built 8+ backend-driven systems including inventory, enterprise modules, and
+                        scalable REST APIs.**
+                    </p>
+                    <div class="about-cta">
+                        <a href="assets/Mohit_Khatore_Resume.pdf" download class="btn-primary">
+                            <i class="fa-solid fa-download"></i> Download Technical Resume
+                        </a>
+                        <a href="assets/mohit_khatore_faang_cover_letter.pdf" target="_blank" class="btn-outline">
+                            <i class="fa-solid fa-file-contract"></i> View Cover Letter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 3 — SKILLS SECTION (STRUCTURED) -->
+        <section id="skills" class="section"
+            style="background: var(--bg-secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <h2
+                    style="font-size: 1.5rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 2rem;">
+                    Technical Arsenal</h2>
+                <div class="card-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <!-- Core Backend -->
+                    <div class="card" style="padding: 1.5rem; border-color: rgba(255,255,255,0.05);">
+                        <h4
+                            style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 1.25rem; letter-spacing: 0.1em; font-weight: 700;">
+                            Core Backend</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Spring MVC</span>
+                            <span class="skill-tag">Servlets/JSP</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Spring Data JPA</span>
+                            <span class="skill-tag">Hibernate</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="card" style="padding: 1.5rem; border-color: rgba(255,255,255,0.05);">
+                        <h4
+                            style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 1.25rem; letter-spacing: 0.1em; font-weight: 700;">
+                            Databases</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">pgvector</span>
+                            <span class="skill-tag">Query Optimization</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Integration -->
+                    <div class="card" style="padding: 1.5rem; border-color: rgba(255,255,255,0.05);">
+                        <h4
+                            style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 1.25rem; letter-spacing: 0.1em; font-weight: 700;">
+                            Frontend Integration</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="card" style="padding: 1.5rem; border-color: rgba(255,255,255,0.05);">
+                        <h4
+                            style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 1.25rem; letter-spacing: 0.1em; font-weight: 700;">
+                            Tools</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Apache Tomcat</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Eclipse IDE</span>
+                            <span class="skill-tag">Ollama</span>
+                            <span class="skill-tag">Spring AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 4 — ENGINEERING APPROACH SECTION -->
+        <section id="engineering" class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                    <div>
+                        <h2
+                            style="font-size: 1.5rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">
+                            Methodology</h2>
+                        <h3 style="font-size: 2rem; margin-top: 1.5rem;">I build systems that scale.</h3>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem;">
+                        <div>
+                            <h4 style="margin-bottom: 0.75rem; color: var(--text-primary);">Architecture First</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">I design
+                                backend
+                                systems with clear separation of concerns using MVC principles, ensuring scalability,
+                                maintainability, and faster development cycles in real-world environments.</p>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.75rem; color: var(--text-primary);">Data-Driven Design</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">I structure
+                                relational databases using normalization principles and optimize performance through
+                                indexing, joins, and efficient query strategies for high-volume workloads.</p>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.75rem; color: var(--text-primary);">Performance Focus</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">I prioritize
+                                efficient backend logic and lightweight frontend rendering by minimizing payload size,
+                                optimizing queries, and reducing execution overhead.</p>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.75rem; color: var(--text-primary);">Security Mindset</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">I implement
+                                secure authentication workflows, role-based access control, and strict validation layers
+                                to ensure reliable and protected application behavior.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 5 — PROJECT SECTION (CASE STUDY FORMAT) -->
+        <section id="projects" class="section"
+            style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+            <div class="container">
+                <h2
+                    style="font-size: 1.5rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 3rem;">
+                    Selected Engineering Work</h2>
+
+                <!-- Project: Inventory Management -->
+                <!-- <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <div>
+                            <span class="hero-tagline" style="margin-bottom: 0.5rem;">Java Core Systems</span>
+                            <h3 style="font-size: 2.2rem;">Inventory Management System</h3>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.75rem;">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Manual tracking leading to 15% data inconsistency and stock-out delays in inventory
+                                updates.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Designed a role-based inventory management system that reduced manual tracking errors and
+                                improved stock visibility.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Tech</h5>
+                            <p>Java, Servlet, JSP, MySQL, JDBC</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Impact</h5>
+                            <p>Managed 5,000+ SKUs with zero recorded data collisions in testing.</p>
+                        </div>
+                    </div>
+                </article> -->
+
+                <!-- Project: Internship Project -->
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <div>
+                            <span class="hero-tagline" style="margin-bottom: 0.5rem;">Porlob Technologies</span>
+                            <h3 style="font-size: 2.2rem;">Backend API System</h3>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://porlobiit.com/" target="_blank" class="btn btn-outline"
+                                style="font-size: 0.75rem;">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Inflexible backend unable to handle evolving business data without frequent schema
+                                migrations.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Designed high-integrity microservices with NoSQL storage for dynamic workflow agility.
+                            </p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Tech</h5>
+                            <p>Java, Spring Boot, MongoDB, JWT</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Impact</h5>
+                            <p>Enabled rapid business workflow iteration with zero downtime schema updates.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: EliteCart -->
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <div>
+                            <span class="hero-tagline" style="margin-bottom: 0.5rem;">Full Stack Engineering</span>
+                            <h3 style="font-size: 2.2rem;">EliteCart – E-Commerce System</h3>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="http://localhost:8080/EliteCart/" target="_blank" class="btn btn-outline"
+                                style="font-size: 0.75rem;">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Relational integrity risks and session management issues across high-volume product
+                                orders.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Architected a robust MVC system with Hibernate ORM to manage state-heavy transactional
+                                lifecycles.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Tech</h5>
+                            <p>Java, Spring MVC, MySQL, Hibernate</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Impact</h5>
+                            <p>Achieved 100% order accuracy and secure session persistence for concurrent user
+                                transactions.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Management System -->
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <div>
+                            <span class="hero-tagline" style="margin-bottom: 0.5rem;">Java EE Core Engineering</span>
+                            <h3 style="font-size: 2.2rem;">Website Management System</h3>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="http://localhost:8080/Website/" target="_blank" class="btn btn-outline"
+                                style="font-size: 0.75rem;">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Need for a custom, low-overhead administrative layer without the performance cost of
+                                heavy frameworks.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Developed a core Java EE orchestration system with custom MVC logic and granular JDBC
+                                data control.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Tech</h5>
+                            <p>Java, JSP, Servlets, JDBC, MySQL</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Impact</h5>
+                            <p>Delivered a high-performance content administration engine with sub-100ms request
+                                handling.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: AI Chat Backend -->
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <div>
+                            <span class="hero-tagline" style="margin-bottom: 0.5rem;">Artificial Intelligence &
+                                RAG</span>
+                            <h3 style="font-size: 2.2rem;">AI Chat Backend – Spring AI System</h3>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="http://localhost:8080/chat" target="_blank" class="btn btn-outline"
+                                style="font-size: 0.75rem;">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>LLMs lack specific organizational context, resulting in generic responses for private
+                                data.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Built a RAG pipeline using Spring AI and vector search (pgvector) to inject real-time
+                                context.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Tech</h5>
+                            <p>Spring Boot, Spring AI, pgvector, Ollama</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Impact</h5>
+                            <p>Implemented contextual, data-grounded AI responses with precise semantic retrieval.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 1: Inventory Management -->
+                <!--  <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <h3 style="font-size: 2.5rem;">Inventory Management System</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">Live Demo</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">GitHub</a>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 3rem; font-size: 1.2rem;">A high-performance orchestration layer for
+                        real-time supply chain synchronization and stock administration.</p>
+
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Manual tracking leading to 15% data inconsistency and stock-out delays in inventory
+                                updates.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Thinking</h5>
+                            <p>Eliminating race conditions by implementing synchronized transactional blocks at the
+                                persistence layer.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Architecture</h5>
+                            <p>Strict MVC architecture with a dedicated Repository layer for abstracted database
+                                interactions.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>A production-ready Java Servlet system with normalized MySQL schemas for real-time
+                                tracking.</p>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 3rem; display: flex; gap: 3rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Tech Stack</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Java, Servlet, JSP, MySQL,
+                                Bootstrap</p>
+                        </div>
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Impact</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Managed 5,000+ SKUs with zero
+                                recorded data collisions in testing.</p>
+                        </div>
+                    </div>
+                </article>
+
+               
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <h3 style="font-size: 2.5rem;">Online Voting Infrastructure</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">Live Demo</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">GitHub</a>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 3rem; font-size: 1.2rem;">Securing digital identity and vote integrity
+                        through a zero-trust architectural framework.</p>
+
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>The core challenge was ensuring 100% vote irrevocability while preventing identity
+                                spoofing.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Thinking</h5>
+                            <p>Designing the system as a state machine where state transitions are only possible after
+                                multi-layered validation.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Architecture</h5>
+                            <p>Spring Security integration with role-based access control (RBAC) and JWT authentication.
+                            </p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Robust Java backend utilizing Hibernate for secure, transactional vote recording and
+                                verification.</p>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 3rem; display: flex; gap: 3rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Tech Stack</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Java, Spring Boot, Hibernate,
+                                Spring Security</p>
+                        </div>
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Impact</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Zero-vulnerability score on
+                                initial security penetration audit.</p>
+                        </div>
+                    </div>
+                </article>
+
+               
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <h3 style="font-size: 2.5rem;">Employee Lifecycle Engine</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">Live Demo</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">GitHub</a>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 3rem; font-size: 1.2rem;">Automating organizational hierarchy and payroll
+                        administration through centralized metadata management.</p>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Fragmented records causing 30% reporting lag and data duplication in HR workflows.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Thinking</h5>
+                            <p>Designing a normalized schema to enforce data integrity and eliminate redundant entry
+                                points.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Architecture</h5>
+                            <p>Layered Service-Oriented Architecture (SOA) for independent module scaling.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>A full-stack Spring MVC application with a centralized dashboard for real-time HR
+                                control.</p>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 3rem; display: flex; gap: 3rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Tech Stack</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Java, Spring MVC, MySQL, JSP
+                            </p>
+                        </div>
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Impact</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Managed 500+ employees with
+                                100% data consistency across departments.</p>
+                        </div>
+                    </div>
+                </article>
+
+               
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <h3 style="font-size: 2.5rem;">Library Catalog Intelligence</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">Live Demo</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">GitHub</a>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 3rem; font-size: 1.2rem;">Optimizing asset circulation and member
+                        cataloging via automated indexing strategies.</p>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Untracked book circulation leading to high asset loss and member frustration.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Thinking</h5>
+                            <p>Implementing a state-driven borrowing flow with automated fine calculation logic.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Architecture</h5>
+                            <p>ORM-based persistence using Hibernate for managing complex member-book relationships.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Structured Java backend with robust validation for circulation and inventory tracking.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 3rem; display: flex; gap: 3rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Tech Stack</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Java, Hibernate, MySQL, CSS</p>
+                        </div>
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Impact</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Cataloged 10k+ items with
+                                real-time availability status for members.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <h3 style="font-size: 2.5rem;">Digital Bookstore Ecosystem</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">Live Demo</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">GitHub</a>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 3rem; font-size: 1.2rem;">A commerce engine designed for low-latency
+                        browsing and high-integrity transaction processing.</p>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Handling spikes in concurrent browsing while maintaining accurate cart-to-order flow.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Thinking</h5>
+                            <p>Focusing on the critical rendering path for product listings and session-based cart
+                                persistence.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Architecture</h5>
+                            <p>Spring Boot Micro-services architecture (conceptual)/Monolithic Spring MVC for rapid
+                                iteration.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Integrated search engine and ACID compliant transaction layer for secure book purchases.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 3rem; display: flex; gap: 3rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Tech Stack</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Java, Spring Boot, MySQL,
+                                Bootstrap</p>
+                        </div>
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Impact</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Achieved sub-200ms query
+                                response times for product catalog searches.</p>
+                        </div>
+                    </div>
+                </article>
+
+               
+                <article class="project-case-study">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                        <h3 style="font-size: 2.5rem;">High-Conversion E-commerce Interface</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">Live Demo</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.8rem;">GitHub</a>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 3rem; font-size: 1.2rem;">A performance-first frontend designed to maximize
+                        user engagement and session duration.</p>
+                    <div class="case-study-grid">
+                        <div class="case-study-item">
+                            <h5>Problem</h5>
+                            <p>Slow page loads leading to high bounce rates in traditional e-commerce landing pages.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Thinking</h5>
+                            <p>Prioritizing visual load speed by using optimized assets and minimal CSS footprints.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Architecture</h5>
+                            <p>Atomic Design methodology for building modular, reusable UI components.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h5>Solution</h5>
+                            <p>Clean, semantic HTML5/CSS3 landing page with subtle JavaScript micro-interactions.</p>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 3rem; display: flex; gap: 3rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Tech Stack</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">HTML5, CSS3, JavaScript, UI/UX
+                                Design</p>
+                        </div>
+                        <div>
+                            <h5
+                                style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                Impact</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">100/100 Lighthouse Performance
+                                score on initial deployment.</p>
+                        </div>
+                    </div>
+                </article>-->
+
+
+            </div>
+        </section>
+
+        <!-- STEP 11 — CONTACT SECTION (FORMSPREE) -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2
+                            style="font-size: 1.5rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">
+                            Reach Out</h2>
+                        <h3>Let's build something structured.</h3>
+                        <p>I'm currently open to new opportunities and collaborations. If you have a project that needs
+                            a rigorous engineering approach, let's talk.</p>
+
+                        <div style="margin-top: 3rem; display: flex; gap: 4rem;">
+                            <div>
+                                <h5
+                                    style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                    Email</h5>
+                                <p style="font-size: 1rem; color: var(--text-primary);">mohitkhatore.work@gmail.com</p>
+                            </div>
+                            <div>
+                                <h5
+                                    style="color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                    Github</h5>
+                                <p style="font-size: 1rem;"><a href="https://github.com/mohitkhatore" target="_blank"
+                                        style="color: var(--text-primary); text-decoration: none;">github.com/mohitkhatore</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://formspree.io/f/xdawoknz" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="_replyto" class="form-control"
+                                placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="What are you building?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; margin-top: 1rem; font-weight: 700;">Send Message</button>
+                        <div id="form-success"
+                            style="display: none; margin-top: 1.5rem; color: #4caf50; font-size: 0.9rem; font-weight: 500;">
+                            ✓ Message sent. I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Footer (Linear Style) -->
+        <footer style="padding: 4rem 0; border-top: 1px solid var(--border);">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">© 2026 Mohit Khatore. Built for stability,
+                        performance, and scale.</p>
+                </div>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="https://linkedin.com/in/mohitkhatore" target="_blank"
+                        style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; font-weight: 500;">LinkedIn</a>
+                    <a href="https://github.com/mohitkhatore" target="_blank"
+                        style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; font-weight: 500;">GitHub</a>
+                    <a href="assets/Mohit_Khatore_Resume.pdf" download
+                        style="color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; font-weight: 500;">Resume</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Simple Scroll Reveals -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
