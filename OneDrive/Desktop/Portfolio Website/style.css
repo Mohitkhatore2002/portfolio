@@ -55,7 +55,7 @@ h5 {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-size: clamp(2rem, 8vw, 4.5rem);
     margin-bottom: 1.5rem;
 }
 
@@ -186,7 +186,7 @@ p {
 /* Grids & Cards */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -280,8 +280,8 @@ p {
 /* Engineering Section */
 .engineering-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(2rem, 5vw, 4rem);
 }
 
 .methodology-list {
@@ -312,7 +312,7 @@ p {
 
 .case-study-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 2rem;
 }
 
@@ -426,9 +426,14 @@ textarea.form-control {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-s);
+    }
+
     .hero-cta-group {
         flex-direction: column;
         width: 100%;
+        gap: 0.75rem;
     }
 
     .btn {
@@ -437,7 +442,9 @@ textarea.form-control {
 
     .hero-social-links {
         margin-left: 0;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        justify-content: center;
+        width: 100%;
     }
 }
 
